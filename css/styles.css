@@ -45,6 +45,20 @@ body {
   letter-spacing: 0.05em;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* ---------------Header---------------- */
 
 .header {
@@ -213,6 +227,7 @@ body {
   text-align: center;
   color: #303030;
 }
+
 .benefits-subtitle {
   font-weight: 600;
   font-size: 11px;
@@ -220,12 +235,66 @@ body {
   text-transform: uppercase;
   color: var(--seconbari-title-color);
 }
+
 .benefits-title {
   color: var(--seconbari-title-color);
 }
+
 .benefits-description {
   font-size: 18px;
   line-height: 1, 67;
   letter-spacing: 0.02em;
   color: #555555;
+}
+
+/*-------------- Barbers-------------------*/
+
+.barbers {
+}
+.barbers-subtitel {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1, 37;
+  text-transform: uppercase;
+  color: #303030;
+}
+.barbers-title {
+  color: var(--seconbari-title-color);
+}
+
+.barbers-list {
+}
+
+.barbers-item {
+}
+.barbers-item-title {
+  font-size: 18px;
+  line-height: 1,39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--seconbari-title-color);
+}
+.barbers-item-text {
+  font-size: 14px;
+  line-height: 1,36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color:var(--accent-color) ;
+}
+
+/*-------------- Gallery-------------------*/
+
+.gallery {
+}
+.gallery-subtitle {
+  font-size: 11px;
+  line-height: 1,37;
+  text-transform: uppercase;
+  
+}
+
+.gallery-list {
+}
+
+.gallery-item {
 }
