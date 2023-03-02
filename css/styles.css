@@ -1,15 +1,30 @@
-@font-face {
+/* @font-face {
   font-family: "Open Sans";
   src: url(../fonts/OpenSans-Regular.ttf);
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "Open Sans-Bold";
   src: url(../fonts/OpenSans-Bold.ttf);
+} */
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  font-family: "Open Sans", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
 }
 
 :root {
@@ -17,8 +32,19 @@ body {
   --seconbari-title-color: #303030;
   --accent-color: #ff6c00;
   --secondary-font: "Raleway", sans-serif;
+  --basic-margin: 20px;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
+}
 .list {
   list-style: none;
 }
@@ -52,7 +78,7 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -62,6 +88,7 @@ body {
 /* ---------------Header---------------- */
 
 .header {
+  padding: 32px 0;
   background-color: grey;
 }
 .header-navigation {
@@ -99,6 +126,9 @@ body {
 
 /* -----------------Hero------------------- */
 
+main {
+}
+
 .hero {
   background-color: gray;
 }
@@ -123,6 +153,7 @@ body {
   line-height: 1.36;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+  margin: var(--basic-margin);
 }
 .hero-title {
   font-family: "Raleway", sans-serif;
@@ -130,18 +161,22 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
+  margin: var(--basic-margin);
 }
 .hero-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+  width: 360px;
   color: #9da4bd;
 }
 
 /*-------------- About -------------------*/
 
 .about {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .about-list {
 }
@@ -155,28 +190,38 @@ body {
   line-height: 1, 36;
   text-transform: uppercase;
   color: var(--seconbari-title-color);
+  margin-bottom: var(--basic-margin);
 }
 .about-title {
   color: var(--seconbari-title-color);
+  margin-bottom: var(--basic-margin);
 }
 .about-decription {
   font-size: 14px;
   line-height: 1, 86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 42px;
 }
 
 .about-decription span {
+  display: block;
   font-size: 18px;
   line-height: 1, 67;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: var(--basic-margin);
 }
 .about-btn {
   color: #303030;
 }
 
 /*-------------- Prices -------------------*/
+
+.prices {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .prices-subtitle {
   font-size: 11px;
@@ -188,9 +233,15 @@ body {
   color: var(--main-title-color);
 }
 .prices-list {
+  padding: 30px 20px;
+  border: 1px solid green;
 }
 .prices-item {
 }
+.prices-item:not(:last-clid) {
+  margin-bottom: var(--basic-margin);
+}
+
 .prices-item-text {
   font-size: 18px;
   line-height: 1, 67;
@@ -269,17 +320,17 @@ body {
 }
 .barbers-item-title {
   font-size: 18px;
-  line-height: 1,39;
+  line-height: 1, 39;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--seconbari-title-color);
 }
 .barbers-item-text {
   font-size: 14px;
-  line-height: 1,36;
+  line-height: 1, 36;
   text-align: center;
   letter-spacing: 0.02em;
-  color:var(--accent-color) ;
+  color: var(--accent-color);
 }
 
 /*-------------- Gallery-------------------*/
@@ -288,9 +339,8 @@ body {
 }
 .gallery-subtitle {
   font-size: 11px;
-  line-height: 1,37;
+  line-height: 1, 37;
   text-transform: uppercase;
-  
 }
 
 .gallery-list {
