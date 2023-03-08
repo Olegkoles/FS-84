@@ -17,7 +17,7 @@
     <!-- header-section -->
 
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-navigation">
           <a href="/" class="header-logo">
             <img src="./img/logo.svg" alt="logo site" />
@@ -49,7 +49,7 @@
       <!-- hero section -->
 
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <ul class="hero-list">
             <li class="hero-item">
               <a
@@ -70,20 +70,22 @@
               >
             </li>
           </ul>
-          <p class="hero-subtitle">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title">BarberShop</h1>
-          <p class="hero-description">
-            We are experts in trendy men’s haircuts. We work quickly, carefully
-            and with style.
-          </p>
+          <div class="hero-content">
+            <p class="hero-subtitle">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-description">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
         </div>
       </section>
 
       <!--/ hero section -->
 
       <!-- About section -->
-      <div class="container">
-        <section id="about" class="about">
+      <section id="about" class="about">
+        <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
               <img
@@ -102,65 +104,71 @@
               />
             </li>
           </ul>
-          <p class="about-subtitle">About</p>
-          <h2 class="about-title title">Best Barbershop in your city</h2>
-          <p class="about-decription">
-            <span
-              >If you want to add more confidence to your image, you should
-              definitely visit us.
-            </span>
+          <div class="about-content">
+            <p class="about-subtitle subtitle">About</p>
+            <h2 class="about-title title">Best Barbershop in your city</h2>
+            <p class="about-decription">
+              <span
+                >If you want to add more confidence to your image, you should
+                definitely visit us.
+              </span>
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button type="button" class="about-btn btn">ONLINE-BOOKING</button>
+          </div>
+        </div>
+      </section>
 
-            We are a team that never stops at what has been achieved and are
-            thirsty for changes. And when you fall into the hands of our master,
-            you will never be the same again. We are a team that is always "on
-            the same wave" with clients. Therefore, we are always ready to
-            improve everyone who comes to us!
-          </p>
-          <button type="button" class="about-btn btn">ONLINE-BOOKING</button>
-        </section>
-      </div>
       <!--/ About section -->
       <!-- Section services -->
       <div class="container">
         <section class="prices">
-          <p class="prices-subtitle">Spend your time with the best masters</p>
+          <p class="prices-subtitle subtitle">
+            Spend your time with the best masters
+          </p>
           <h2 class="prices-title title">Services and prices</h2>
-          <ul class="prices-list list">
-            <li class="prices-item">
-              <p class="prices-item-text">Men’s haircut</p>
-              <p class="prices-item-text">from 300 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Beard trim</p>
-              <p class="prices-item-text">from 300 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Mustache trim</p>
-              <p class="prices-item-text">from 200 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Straight razor shave</p>
-              <p class="prices-item-text">from 200 uah.</p>
-            </li>
-          </ul>
-          <ul class="prices-list list">
-            <li class="prices-item">
-              <p class="prices-item-text">Trainee’s haircut</p>
-              <p class="prices-item-text">from 50 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Haircut under the nozzle</p>
-              <p class="prices-item-text">from 200 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Children’s haircut (0-12 y.o.)</p>
-              <p class="prices-item-text">from 300 uah.</p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Camouflage of gray hair</p>
-              <p class="prices-item-text">from 200 uah.</p>
-            </li>
-          </ul>
+          <div class="prices-content">
+            <ul class="prices-list list">
+              <li class="prices-item">
+                <p class="prices-item-text">Men’s haircut</p>
+                <p class="prices-item-text">from 300 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Beard trim</p>
+                <p class="prices-item-text">from 300 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Mustache trim</p>
+                <p class="prices-item-text">from 200 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Straight razor shave</p>
+                <p class="prices-item-text">from 200 uah.</p>
+              </li>
+            </ul>
+            <ul class="prices-list list">
+              <li class="prices-item">
+                <p class="prices-item-text">Trainee’s haircut</p>
+                <p class="prices-item-text">from 50 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Haircut under the nozzle</p>
+                <p class="prices-item-text">from 200 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Children’s haircut (0-12 y.o.)</p>
+                <p class="prices-item-text">from 300 uah.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Camouflage of gray hair</p>
+                <p class="prices-item-text">from 200 uah.</p>
+              </li>
+            </ul>
+          </div>
           <button type="button" class="prices-btm btn">ONLINE-BOOKING</button>
         </section>
       </div>
@@ -195,44 +203,53 @@
       <!--/Section Feature -->
       <!-- Section team -->
       <section class="barbers">
-        <p class="barbers-subtitel">For true enjoyers of the atmosphere</p>
-        <h2 class="barbers-title title">Our barbers</h2>
-        <ul class="barbers-list list">
-          <li class="barbers-item">
-            <img
-              src="img/john_img.jpg"
-              alt="John Smith photo"
-              width="370px"
-              height="346"
-            />
-            <h3 class="barbers-item-title">John Smith</h3>
-            <p class="barbers-item-text">Extreme Barber</p>
-          </li>
-          <li class="barbers-item">
-            <img
-              src="img/michele-img.jpg"
-              alt="Michele Doe photo"
-              width="370px"
-              height="346"
-            />
-            <h3 class="barbers-item-title">Michele Doe</h3>
-            <p class="barbers-item-text">Extreme Barber</p>
-          </li>
-          <li class="barbers-item">
-            <img
-              src="img/alan-img.jpg"
-              alt="Alan Black photo"
-              width="370px"
-              height="346"
-            />
-            <h3 class="barbers-item-title">Alan Black</h3>
-            <p class="barbers-item-text">Extreme Barber</p>
-          </li>
-        </ul>
+        <div class="container">
+          <p class="barbers-subtitel">For true enjoyers of the atmosphere</p>
+          <h2 class="barbers-title title">Our barbers</h2>
+          <ul class="barbers-list list">
+            <li class="barbers-item">
+              <img
+                src="img/john_img.jpg"
+                alt="John Smith photo"
+                width="370px"
+                height="346"
+              />
+              <div class="barbers-content">
+                <h3 class="barbers-item-title">John Smith</h3>
+                <p class="barbers-item-text">Extreme Barber</p>
+              </div>
+            </li>
+            <li class="barbers-item">
+              <img
+                src="img/michele-img.jpg"
+                alt="Michele Doe photo"
+                width="370px"
+                height="346"
+              />
+              <div class="barbers-content">
+                <h3 class="barbers-item-title">Michele Doe</h3>
+                <p class="barbers-item-text">Extreme Barber</p>
+              </div>
+            </li>
+            <li class="barbers-item">
+              <img
+                src="img/alan-img.jpg"
+                alt="Alan Black photo"
+                width="370px"
+                height="346"
+              />
+              <div class="barbers-content">
+                <h3 class="barbers-item-title">Alan Black</h3>
+                <p class="barbers-item-text">Extreme Barber</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- /Section team -->
       <!-- Section galleri -->
       <section class="gallery">
+        <div class="container">
         <p class="gallery-subtitle">In Latin, "barba" means "beard"</p>
         <h2 class="visually-hidden">Gaiieri</h2>
         <ul class="gallery-list list">
@@ -269,6 +286,7 @@
             />
           </li>
         </ul>
+      </div>
       </section>
       <!-- /Section galleri -->
       <!-- Section Contact -->
